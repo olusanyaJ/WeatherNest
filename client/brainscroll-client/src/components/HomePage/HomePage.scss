@@ -8,8 +8,7 @@
   background-color: aliceblue;
   @include tablet {
     height: 88vh;
-    padding: 2rem 0;
-    padding-bottom: 0;
+    padding: 3rem 0;
   }
 
   &__container {
