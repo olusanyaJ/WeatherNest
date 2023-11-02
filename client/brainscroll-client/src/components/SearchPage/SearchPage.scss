@@ -1,0 +1,23 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/reset";
+@use "../../styles/partials/variables" as *;
+
+.search {
+  border: 1px solid red;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  @include tablet {
+    margin: 4rem 0;
+    padding-bottom: 0;
+  }
+
+  &__container {
+    border: 1px solid green;
+    width: 100%;
+    @include tablet {
+      width: 50%;
+      border: 1px solid blue;
+      margin: 0 auto;
+    }
+  }
+}

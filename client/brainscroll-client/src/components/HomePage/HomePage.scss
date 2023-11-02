@@ -2,12 +2,12 @@
 @use "../../styles/partials/reset";
 @use "../../styles/partials/variables" as *;
 
-.home,
-.search {
+.home {
   border: 1px solid red;
   padding: 0 1rem;
   padding-bottom: 1rem;
   @include tablet {
+    margin: 4rem 0;
     padding-bottom: 0;
   }
 
@@ -15,12 +15,9 @@
     border: 1px solid green;
     width: 100%;
     @include tablet {
-      display: flex;
-      align-items: center;
-    }
-    @include desktop {
+      width: 50%;
+      border: 1px solid blue;
       margin: 0 auto;
-      width: $desktop-breakpoint;
     }
   }
 }

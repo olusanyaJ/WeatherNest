@@ -23,6 +23,12 @@
     }
   }
 
+  &__link {
+    text-decoration-line: none;
+    color: black;
+    width: 40%;
+  }
+
   &__title {
     margin: 0;
     padding: 1rem 0;
@@ -63,14 +69,17 @@
     color: black;
     font-weight: 700;
     width: 6rem;
+    text-align: center;
     padding: 0.5rem 1rem;
+    @include tablet {
+      width: 8rem;
+    }
   }
 
   &__search {
     margin-bottom: 1rem;
     @include tablet {
       margin-bottom: 0;
-      margin-right: 1rem;
     }
   }
 

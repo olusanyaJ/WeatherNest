@@ -6,8 +6,8 @@ const HomePage = () => {
     <div className="home">
       <div className="home__container">
         <h2 className="home__intro">todays random weather is from</h2>
+        <Weather />
       </div>
-      <Weather />
     </div>
   );
 };

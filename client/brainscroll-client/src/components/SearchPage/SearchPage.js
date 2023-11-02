@@ -6,8 +6,8 @@ const SearchPage = () => {
     <div className="search">
       <div className="search__container">
         <h2 className="weather__intro">the weather you searched is </h2>
+        <Weather />
       </div>
-      <Weather />
     </div>
   );
 };
