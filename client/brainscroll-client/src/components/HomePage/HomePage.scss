@@ -19,9 +19,14 @@
       margin: 0 auto;
     }
   }
-}
 
-.home__intro {
-  text-align: center;
-  font-size: 1.125rem;
+  &__intro {
+    text-align: center;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 3rem 0 1rem;
+    @include tablet {
+      padding: 0;
+    }
+  }
 }
