@@ -39,5 +39,18 @@
 
   &__image {
     width: 100%;
+    margin: 1rem 0;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__time {
+    color: red;
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    color: blue;
+    font-size: 1.5rem;
   }
 }

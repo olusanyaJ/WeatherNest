@@ -3,9 +3,9 @@
 @use "../../styles/partials/variables" as *;
 
 .header {
-  border-bottom: 1px solid red;
   padding: 1rem;
-  background-color: #d8d9da;
+  background-color: rgb(53, 52, 52);
+  overflow: hidden;
 
   &__container {
     width: 100%;
@@ -30,6 +30,7 @@
     padding: 1rem 0;
     padding-bottom: 2rem;
     font-weight: 900;
+    color: white;
     width: 100%;
     text-align: center;
     @include tablet {
@@ -55,6 +56,8 @@
     width: 12rem;
     padding: 0.75rem 1rem;
     margin-right: 1rem;
+    border-radius: 5px;
+    border: #007bff;
     @include tablet {
       width: 100%;
       margin-right: 0.5rem;
@@ -66,15 +69,19 @@
   }
 
   &__button {
-    background-color: #61677a;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    font-weight: 700;
     width: 6rem;
     text-align: center;
-    padding: 0.75rem 1rem;
     text-decoration-line: none;
+    width: 7rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
     @include tablet {
       width: 8rem;
     }

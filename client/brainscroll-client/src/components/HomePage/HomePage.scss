@@ -5,7 +5,13 @@
 .home {
   padding: 0 1rem;
   padding-bottom: 1rem;
-  background-color: aliceblue;
+
+  // background-image: url("https://images.pexels.com/photos/18843271/pexels-photo-18843271/free-photo-of-sunlight-piercing-through-storm-clouds-over-the-discovery-park-lighthouse.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // filter: blur(1px);
+
   @include tablet {
     height: 88vh;
     padding: 3rem 0;

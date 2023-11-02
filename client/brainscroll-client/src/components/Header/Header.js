@@ -1,7 +1,24 @@
 import { Link } from "react-router-dom";
 import "./Header.scss";
+import { useState } from "react";
 
 const Header = () => {
+  const [city, setCity] = useState("");
+
+  const handleChange = (event) => {
+    event.preventDefault();
+    setCity(event.target.value);
+  };
+
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   console.log(e);
+  //   // if (city) {
+  //   //   console.log(city);
+  //   //   // fetchWeatherByCity();
+  //   // }
+  // };
+
   return (
     <header className="header">
       <div className="header__container">
@@ -16,8 +33,10 @@ const Header = () => {
               placeholder="Search a particular locations weather"
               className="form__input"
               name="searchLocation"
+              value={city}
+              onChange={handleChange}
             />
-            <Link to={`/search`} className="form__button">
+            <Link to={`/search/${city}`} className="form__button">
               <span className="header__title">Search</span>
             </Link>
           </div>
@@ -27,6 +46,8 @@ const Header = () => {
               placeholder="Compare a particular locations weather"
               className="form__input"
               name="compareLocation"
+              // value={city}
+              // onClick={handleChange}
             />
             <Link to={`/compare`} className="form__button">
               <span className="header__title">Compare</span>

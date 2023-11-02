@@ -4,7 +4,6 @@ import Header from "./components/Header/Header";
 import SearchPage from "./components/SearchPage/SearchPage";
 import HomePage from "./components/HomePage/HomePage";
 import ComparePage from "./components/ComparePage/ComparePage";
-import Weather from "./components/Weather/Weather";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         {/* <Weather /> */}
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
-          <Route path="/search" element={<SearchPage />}></Route>
+          <Route path="/search/:city" element={<SearchPage />}></Route>
           <Route path="/compare" element={<ComparePage />}></Route>
         </Routes>
       </BrowserRouter>
