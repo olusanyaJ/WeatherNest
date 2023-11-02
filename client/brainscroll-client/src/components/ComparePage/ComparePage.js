@@ -6,11 +6,13 @@ const ComparePage = () => {
     <div className="compare">
       <div className="compare__container">
         <div className="compare__inner">
-          <h2 className="compare__intro">todays random weather is from</h2>
+          <h2 className="compare__intro">today's random weather forecast</h2>
           <Weather />
         </div>
         <div className="compare__inner">
-          <h2 className="compare__intro">the weather you want to compare is</h2>
+          <h2 className="compare__intro">
+            the weather of the city you're curious about
+          </h2>
           <Weather />
         </div>
       </div>

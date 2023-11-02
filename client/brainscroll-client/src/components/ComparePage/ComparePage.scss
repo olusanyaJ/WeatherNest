@@ -3,20 +3,20 @@
 @use "../../styles/partials/variables" as *;
 
 .compare {
-  border: 1px solid red;
   padding: 0 1rem;
   padding-bottom: 1rem;
+  background-color: lightcoral;
+
   @include tablet {
-    margin: 4rem 0;
+    height: 88vh;
+    padding: 2rem 0;
     padding-bottom: 0;
   }
 
   &__container {
-    border: 1px solid green;
     width: 100%;
     @include tablet {
       width: $desktop-breakpoint;
-      border: 1px solid blue;
       display: flex;
       margin: 0 auto;
     }

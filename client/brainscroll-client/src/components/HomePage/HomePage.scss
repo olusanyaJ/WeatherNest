@@ -3,20 +3,19 @@
 @use "../../styles/partials/variables" as *;
 
 .home {
-  border: 1px solid red;
   padding: 0 1rem;
   padding-bottom: 1rem;
+  background-color: aliceblue;
   @include tablet {
-    margin: 4rem 0;
+    height: 88vh;
+    padding: 2rem 0;
     padding-bottom: 0;
   }
 
   &__container {
-    border: 1px solid green;
     width: 100%;
     @include tablet {
       width: 50%;
-      border: 1px solid blue;
       margin: 0 auto;
     }
   }
@@ -24,4 +23,5 @@
 
 .home__intro {
   text-align: center;
+  font-size: 1.125rem;
 }

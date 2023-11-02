@@ -5,7 +5,10 @@ const HomePage = () => {
   return (
     <div className="home">
       <div className="home__container">
-        <h2 className="home__intro">todays random weather is from</h2>
+        <h2 className="home__intro">
+          today's random weather forecast might surprise you with its unique
+          twist and it is from{" "}
+        </h2>
         <Weather />
       </div>
     </div>

@@ -3,7 +3,6 @@
 @use "../../styles/partials/variables" as *;
 
 .weather {
-  border: 1px solid yellow;
   padding: 0;
   @include tablet {
     padding: 1rem;
@@ -15,7 +14,6 @@
 }
 
 .card {
-  border: 1px solid blueviolet;
   padding: 0;
   margin-top: 1rem;
   text-align: center;
@@ -28,7 +26,6 @@
 
   @include desktop {
     padding: 0;
-    margin-top: 2rem;
   }
 
   &__title {

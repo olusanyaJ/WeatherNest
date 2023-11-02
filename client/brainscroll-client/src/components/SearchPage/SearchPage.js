@@ -5,7 +5,10 @@ const SearchPage = () => {
   return (
     <div className="search">
       <div className="search__container">
-        <h2 className="weather__intro">the weather you searched is </h2>
+        <h2 className="weather__intro">
+          discover the weather you seek in a city you're curious about, and let
+          nature's tale unfold at your fingertips.
+        </h2>
         <Weather />
       </div>
     </div>
