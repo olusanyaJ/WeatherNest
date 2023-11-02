@@ -26,7 +26,6 @@ function randomCities() {
 }
 
 const randomLocation = randomCities();
-console.log(randomLocation);
 
 const randomURL = `https://api.openweathermap.org/data/2.5/weather?q=${randomLocation}&appid=ed26d6a8ccfdd6d65ff8cece7c01c685`;
 
@@ -41,6 +40,44 @@ router.get("/random", (req, res) => {
 	};
 
 	getRandom();
+});
+
+router.get("/random/icon", (req, res) => {
+	const getRandom = async () => {
+		try {
+			const response = await axios.get(randomURL);
+			res.status(201).send(response.data.weather[0].icon);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	getRandom();
+});
+
+router.get("/random/location", (req, res) => {
+	const getLocation = async () => {
+		try {
+			const response = await axios.get(randomURL);
+			res.status(200).send(response.data.name);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+	getLocation();
+});
+
+router.get("/random/details", (req, res) => {
+	const getDetails = async () => {
+		try {
+			const response = await axios.get(randomURL);
+			res.status(201).send(response.data);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	getDetails();
 });
 
 router.get("/weather", (req, res) => {
@@ -84,11 +121,11 @@ router.get("/weather/location", (req, res) => {
 	getLocation();
 });
 
-router.get("weather/details", (req, res) => {
+router.get("/weather/details", (req, res) => {
 	const getDetails = async () => {
 		try {
 			const response = await axios.get(apiURL);
-			res.status(201).send(response);
+			res.status(201).send(response.data);
 		} catch (error) {
 			console.error(error);
 		}
