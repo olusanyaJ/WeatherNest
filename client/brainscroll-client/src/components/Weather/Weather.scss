@@ -1,3 +1,46 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/reset";
 @use "../../styles/partials/variables" as *;
+
+.weather {
+  border: 1px solid yellow;
+  padding: 0;
+  @include tablet {
+    padding: 1rem;
+  }
+
+  &__intro {
+    text-align: center;
+  }
+}
+
+.card {
+  border: 1px solid blueviolet;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: center;
+
+  @include tablet {
+    width: 75%;
+    margin-top: 0;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    font-weight: 900;
+    font-size: 1.75rem;
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

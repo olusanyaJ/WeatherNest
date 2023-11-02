@@ -1,0 +1,39 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/reset";
+@use "../../styles/partials/variables" as *;
+
+.compare {
+  border: 1px solid red;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  @include tablet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 9.25rem;
+  }
+
+  &__container {
+    border: 1px solid green;
+    width: 100%;
+    @include tablet {
+      width: $desktop-breakpoint;
+      border: 1px solid blue;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    @include tablet {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  &__intro {
+    text-align: center;
+  }
+}
