@@ -7,6 +7,42 @@ const fs = require("fs");
 
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=ed26d6a8ccfdd6d65ff8cece7c01c685`;
 
+function randomCities() {
+	const cities = [
+		"New York",
+		"Los Angeles",
+		"Chicago",
+		"London",
+		"Paris",
+		"Berlin",
+		"Tokyo",
+		"Sydney",
+		"Toronto",
+		"Miami",
+	];
+
+	const randomIndex = Math.floor(Math.random() * cities.length);
+	return cities[randomIndex];
+}
+
+const randomLocation = randomCities();
+console.log(randomLocation);
+
+const randomURL = `https://api.openweathermap.org/data/2.5/weather?q=${randomLocation}&appid=ed26d6a8ccfdd6d65ff8cece7c01c685`;
+
+router.get("/random", (req, res) => {
+	const getRandom = async () => {
+		try {
+			const response = await axios.get(randomURL);
+			res.status(201).send(response.data.weather);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	getRandom();
+});
+
 router.get("/weather", (req, res) => {
 	const getLocation = async () => {
 		try {
