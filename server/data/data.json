@@ -1,0 +1,32 @@
+[
+	{
+		"name": "London",
+		"time": "02-11-2023",
+		"description": "seems ok"
+	},
+	{
+		"name": "Tokyo",
+		"time": "02-11-2023",
+		"description": "seems fine"
+	},
+	{
+		"name": "Cidny",
+		"time": "02-11-2023",
+		"description": "slightly cloudy"
+	},
+	{
+		"name": "Berlin",
+		"time": "02-11-2023",
+		"description": "slighty clear"
+	},
+	{
+		"name": "Lagos",
+		"time": "02-11-2023",
+		"description": "clear skies"
+	},
+	{
+		"name": "Chicago",
+		"time": "02-11-2023",
+		"description": "sheavy downpour"
+	}
+]
